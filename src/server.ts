@@ -1,6 +1,9 @@
+import path from 'path';
 import dotenv from 'dotenv';
 
-dotenv.config();
+const NODE_ENV = process.env.NODE_ENV;
+
+dotenv.config({ path: path.join(__dirname + '\\..\\', NODE_ENV === 'production' ? '.env' : '.env.dev') });
 
 import app from '@/app';
 import Logger from '@/lib/Logger';

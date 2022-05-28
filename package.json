@@ -1,7 +1,7 @@
 {
-    "name": "express-ts-template",
+    "name": "express-ts-template-2",
     "version": "1.0.0",
-    "description": "",
+    "description": "ExpressJS TypeScript stateless bare minimum template",
     "main": "index.js",
     "scripts": {
         "dev": "nodemon",
@@ -10,8 +10,13 @@
         "lint": "eslint . --ext .ts",
         "start": "npm run build && cross-env NODE_ENV=production node dist/server.js"
     },
-    "keywords": [],
-    "author": "",
+    "keywords": [
+        "express",
+        "stateless",
+        "typescript",
+        "microservice"
+    ],
+    "author": "Ravinder Singh",
     "license": "ISC",
     "moduleNameMapper": {
         "@/(.*)$": "<rootDir>/src/$1",
