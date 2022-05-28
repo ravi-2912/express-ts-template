@@ -1,0 +1,31 @@
+{
+    "presets": [
+        "@babel/preset-typescript",
+        [
+            "@babel/env",
+            {
+                "targets": {
+                    "browsers": "> 0.25%, ie 11, not op_mini all, not dead",
+                    "node": 14
+                },
+                "corejs": "3.22.5",
+                "useBuiltIns": "usage"
+            }
+        ]
+    ],
+    "plugins": [
+        "@babel/proposal-object-rest-spread",
+        "@babel/proposal-class-properties",
+        [
+            "module-resolver",
+            {
+                "root": ["./src"],
+                "alias": {
+                    "@": "./src",
+                    "_root": "./"
+                }
+            }
+        ]
+    ],
+    "sourceMaps": true
+}

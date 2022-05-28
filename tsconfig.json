@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "ES2018",
+        "module": "commonjs",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "lib": ["ESNEXT"],
+        /* Strict Type-Checking Options */
+        "strict": true,
+        "noImplicitAny": true,
+        /* Module Resolution Options */
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "baseUrl": "./src",
+        "esModuleInterop": true,
+        /* Advanced Options */
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "paths": {
+            "@/*": ["./*"],
+            "_root/*": ["*"]
+        }
+    },
+    "lib": ["es2015"],
+    "include": ["./src/**/*"],
+    "exclude": ["./node_modules", "./dist", "./build"]
+}
